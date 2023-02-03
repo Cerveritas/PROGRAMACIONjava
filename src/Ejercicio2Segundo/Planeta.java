@@ -1,7 +1,15 @@
 package Ejercicio2Segundo;
 
+import java.util.Scanner;
+
 public class Planeta {
 
+    // variable de clase compartida por todos los objetos
+
+    public static int contador=0;
+
+
+/***/
     // atributos
 
     private String nombre;
@@ -18,6 +26,7 @@ public class Planeta {
 
     public Planeta(){
         observable = false;
+        contador++;
 
     }
 
@@ -31,8 +40,24 @@ public class Planeta {
         this.distanciaSol=distanciaSol;
         this.tamanio=tamanio;
         this.observable=observable;
+        contador++;
 
     }
+
+    /*polimorfismo de sobrescritutra de metodos tmb tienes la manera de hacerlo con
+        metodo imprimir y usar prints
+
+        public void imprimir
+
+     */
+
+
+    //@Override
+    public String ToString(){
+        return this.nombre+this.satelites+this.masa+this.volumen+this.diametro+this.distanciaSol+this.tamanio+this.observable;
+    }
+
+    //getters and setters
 
     public String getNombre() {
         return nombre;
