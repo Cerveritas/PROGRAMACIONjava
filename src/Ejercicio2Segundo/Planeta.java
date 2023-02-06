@@ -9,7 +9,8 @@ public class Planeta {
     public static int contador=0;
 
 
-/***/
+/**************************************************ATRIBUTOS***********************************************************/
+
     // atributos
 
     private String nombre;
@@ -21,6 +22,7 @@ public class Planeta {
     private Tamanio tamanio;
     private boolean observable;
 
+/************************************************CONSTRUCTORES*********************************************************/
 
     //constructor --> Por defecto
 
@@ -42,20 +44,62 @@ public class Planeta {
         this.observable=observable;
         contador++;
 
+
     }
+
+/**************************************************METODOS**************************************************************/
+
+    //metodo calcular densidad
+
+    public double calcularDensidad(){
+        double resultado=0;
+        resultado=masa/volumen;
+        return resultado;
+    }
+
+    //metodo esplanetaexterior
+
+    public boolean esPlanetaExterior(){
+        boolean esExterior=false;
+        float limite = (float) (14597870*3.4);
+
+        if (distanciaSol>limite){
+            esExterior = true;
+        }
+        return esExterior;
+    }
+
+
+
+/**********************************************************************************************************************/
 
     /*polimorfismo de sobrescritutra de metodos tmb tienes la manera de hacerlo con
         metodo imprimir y usar prints
+        o la mejor manera que es usar el ToString*/
 
-        public void imprimir
+       public void imprimir(){
+            System.out.println("El nombre del planeta "+this.nombre);
+            System.out.println("La cantidad de satelites es "+this.satelites);
+            System.out.println("La masa del planeta ed "+this.masa);
+            System.out.println("El volumen es "+this.volumen);
+            System.out.println("Eteceters");
+        }
 
-     */
-
-
-    //@Override
-    public String ToString(){
-        return this.nombre+this.satelites+this.masa+this.volumen+this.diametro+this.distanciaSol+this.tamanio+this.observable;
+    @Override
+    public String toString() {
+        return "Planeta{" +
+                "nombre='" + nombre + '\'' +
+                ", satelites=" + satelites +
+                ", masa=" + masa +
+                ", volumen=" + volumen +
+                ", diametro=" + diametro +
+                ", distanciaSol=" + distanciaSol +
+                ", tamanio=" + tamanio +
+                ", observable=" + observable +
+                '}';
     }
+
+/************************************************GETTERS Y SETTERS*****************************************************/
 
     //getters and setters
 
@@ -114,12 +158,14 @@ public class Planeta {
     public void setTamanio(Tamanio tamanio) {
         this.tamanio = tamanio;
     }
-
     public boolean isObservable() {
         return observable;
     }
 
     public void setObservable(boolean observable) {
         this.observable = observable;
+
+
+
     }
 }

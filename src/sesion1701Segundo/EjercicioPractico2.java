@@ -9,6 +9,18 @@ public class EjercicioPractico2 {
     private String Direccion;
 
 
+    @Override
+    public String toString() {
+        return "EjercicioPractico2{" +
+                "DNI='" + DNI + '\'' +
+                ", Nombre='" + Nombre + '\'' +
+                ", Apellido1='" + Apellido1 + '\'' +
+                ", Apellido2='" + Apellido2 + '\'' +
+                ", Nacionalidad='" + Nacionalidad + '\'' +
+                ", Direccion='" + Direccion + '\'' +
+                '}';
+    }
+
     public String getDNI() {
         return DNI;
     }
