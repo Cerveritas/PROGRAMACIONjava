@@ -1,10 +1,12 @@
 package sesion1701Segundo;
 
+import java.util.Scanner;
+
 public class Viajero {
 
     //variable de clase compartida por todos los objetos
 
-    public static int contador = 0;
+    public static int contador;
 
 /**************************************************ATRIBUTOS***********************************************************/
 
@@ -108,5 +110,41 @@ public class Viajero {
 
     public void setDireccion(String direccion) {
         Direccion = direccion;
+    }
+
+/*******************************************************METODOS********************************************************/
+
+    public void getInfo(FormatoViajero modo){
+
+        String entrada="";
+        Scanner sc = new Scanner(System.in);
+            switch (modo){
+
+                case normal:
+                    System.out.println("El DNI del pasajero es "+DNI);
+                    System.out.println("El nombre del pasajero es "+Nombre);
+                    System.out.println("El primer apellido del pasajero es "+Apellido1);
+                    System.out.println("El segundo apellido del pasajero es "+Apellido2);
+                    System.out.println("La nacionalidad del pasajero es "+Nacionalidad);
+                    System.out.println("La direccion del pasajero es "+Direccion);
+                        break;
+
+                case pausado:
+                    System.out.println("El DNI del pasajero es "+DNI);
+                        entrada = sc.nextLine();
+                    System.out.println("El nombre del pasasjero es "+Nombre);
+                        entrada = sc.nextLine();
+                    System.out.println("El primer apellido del pasajero es "+Apellido1);
+                        entrada = sc.nextLine();
+                    System.out.println("El segundo apellido del pasajero es "+Apellido2);
+                        entrada = sc.nextLine();
+                    System.out.println("La nacionalidad del pasajero es "+Nacionalidad);
+                        entrada = sc.nextLine();
+                    System.out.println("La direccion del pasajero es "+Direccion);
+                        break;
+        }
+
+
+
     }
 }
