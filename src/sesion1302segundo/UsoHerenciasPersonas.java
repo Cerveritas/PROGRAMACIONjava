@@ -3,7 +3,6 @@ package sesion1302segundo;
 public class UsoHerenciasPersonas {
     public static void main(String[] args) {
 
-
                                                                                                                         System.out.println(" ");
 
         Profesor pro = new Profesor("497801191P","Sergio",19,230400);
