@@ -45,6 +45,8 @@ public class Cerdo extends Animal{
                 "alimentacion='" + alimentacion + '\'' +
                 ", edad=" + edad +
                 "} " + super.toString();
+
+
     }
 }
 

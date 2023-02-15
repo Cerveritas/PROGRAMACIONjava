@@ -3,10 +3,13 @@ package VehiculosHerenciaSegundo;
 public class Coche extends Vehiculo {
 
 
+    // atributos
     private int numeroPuertas;
     private int caballos;
 
 
+
+    // constructores
     public Coche(){
 
     }
@@ -17,6 +20,8 @@ public class Coche extends Vehiculo {
         this.caballos = caballos;
     }
 
+
+    // getters and setters
     public int getNumeroPuertas() {
         return numeroPuertas;
     }
@@ -31,5 +36,18 @@ public class Coche extends Vehiculo {
 
     public void setCaballos(int caballos) {
         this.caballos = caballos;
+    }
+
+
+    // metodos
+
+
+    public String showInfo() {
+        return "Coche{" +
+                "numeroPuertas=" + numeroPuertas +
+                ", caballos=" + caballos +
+                ", kilometrosRealizados=" + kilometrosRealizados +
+                ", matricula='" + matricula + '\'' +
+                '}';
     }
 }

@@ -3,20 +3,24 @@ package VehiculosHerenciaSegundo;
 public class Vehiculo {
 
 
-    private int kilometrosRealizados;
-    private String matricula;
+    // atrinbutos
+
+    protected int kilometrosRealizados;
+    protected String matricula;
 
 
+    // constructores
     public Vehiculo(){
 
     }
-
 
     public Vehiculo(int kilometrosRealizados, String matricula) {
         this.kilometrosRealizados = kilometrosRealizados;
         this.matricula = matricula;
     }
 
+
+    // getters and setters
 
     public int getKilometrosRealizados() {
         return kilometrosRealizados;
@@ -43,11 +47,4 @@ public class Vehiculo {
     }
 */
 
-
-    public String showInfo() {
-        return "Vehiculo{" +
-                "kilometrosRealizados=" + kilometrosRealizados +
-                ", matricula='" + matricula + '\'' +
-                '}';
-    }
 }
