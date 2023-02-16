@@ -8,7 +8,7 @@ public class JefesProyectos {
     private String nombre;
     private String apellidos;
     private int horasTrabajadas;
-    private boolean proyectos;
+    private String proyectos;
 
 
     // constructores
@@ -17,7 +17,7 @@ public class JefesProyectos {
 
     }
 
-    public JefesProyectos(String NIF,String nombre, String apellidos, int horasTrabajadas,boolean proyectos){
+    public JefesProyectos(String NIF,String nombre, String apellidos, int horasTrabajadas,String proyectos){
         this.NIF = NIF;
         this.nombre = nombre;
         this.apellidos = apellidos;
@@ -61,14 +61,13 @@ public class JefesProyectos {
         this.horasTrabajadas = horasTrabajadas;
     }
 
-    public boolean isProyectos() {
+    public String getProyectos() {
         return proyectos;
     }
 
-    public void setProyectos(boolean proyectos) {
+    public void setProyectos(String proyectos) {
         this.proyectos = proyectos;
     }
-
 
     // metodos
 

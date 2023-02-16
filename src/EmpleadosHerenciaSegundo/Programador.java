@@ -8,7 +8,7 @@ public class Programador {
     private String nombre;
     private String apellidos;
     private int horasTrabajadas;
-    private boolean lengajeProgramacion;
+    private String lengajeProgramacion;
     private String proyecto;
 
 
@@ -18,7 +18,7 @@ public class Programador {
 
     }
 
-    public Programador(String NIF, String nombre, String apellidos, int horasTrabajadas, boolean lengajeProgramacion, String proyecto) {
+    public Programador(String NIF, String nombre, String apellidos, int horasTrabajadas, String lengajeProgramacion, String proyecto) {
         this.NIF = NIF;
         this.nombre = nombre;
         this.apellidos = apellidos;
@@ -63,11 +63,11 @@ public class Programador {
         this.horasTrabajadas = horasTrabajadas;
     }
 
-    public boolean isLengajeProgramacion() {
+    public String getLengajeProgramacion() {
         return lengajeProgramacion;
     }
 
-    public void setLengajeProgramacion(boolean lengajeProgramacion) {
+    public void setLengajeProgramacion(String lengajeProgramacion) {
         this.lengajeProgramacion = lengajeProgramacion;
     }
 
