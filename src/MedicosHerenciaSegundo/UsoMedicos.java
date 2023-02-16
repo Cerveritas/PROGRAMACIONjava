@@ -11,10 +11,17 @@ public class UsoMedicos {
         Paciente[] pacientes = {paciente1,paciente2,paciente3};
 
 
+
         Cirujano Superman = new Cirujano("Superman","SinCapa",1,"SuCasa",2,pacientes);
+        Podologo SraInes = new Podologo("Ines","Trigo",2,"Getafe",3,pacientes);
+        DeFamilia Luisa = new DeFamilia("Luisa","Prado",3,"Mostoles",pacientes);
 
 
         System.out.println(Superman.showInfo());
+        System.out.println(" ");
+        System.out.println(SraInes.showInfo());
+        System.out.println(" ");
+        System.out.println(Luisa.showInfo());
 
 
 

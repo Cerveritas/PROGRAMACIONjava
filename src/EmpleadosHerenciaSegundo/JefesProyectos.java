@@ -68,4 +68,35 @@ public class JefesProyectos {
     public void setProyectos(boolean proyectos) {
         this.proyectos = proyectos;
     }
+
+
+    // metodos
+
+
+    public int horasTrabajadas(int cantidad){
+        horasTrabajadas=horasTrabajadas+cantidad;
+        return cantidad;
+    }
+
+
+    public String showInfo() {
+        return "JefesProyectos{" +
+                "NIF='" + NIF + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", apellidos='" + apellidos + '\'' +
+                ", horasTrabajadas=" + horasTrabajadas +
+                ", proyectos=" + proyectos +
+                '}';
+    }
+
+
+    public boolean proyectoDado(String proyecto){
+
+        if (proyecto == "proyecProgramacion") {
+            return true;
+        }else{
+            return false;
+        }
+    }
 }
+

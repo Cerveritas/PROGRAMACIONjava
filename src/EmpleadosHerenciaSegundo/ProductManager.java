@@ -65,4 +65,23 @@ public class ProductManager {
     public void setProyecto(String proyecto) {
         this.proyecto = proyecto;
     }
+
+
+    // metodos
+
+
+    public int horasTrabajadas(int cantidad){
+        horasTrabajadas=horasTrabajadas+cantidad;
+        return cantidad;
+    }
+
+    public String showInfo() {
+        return "ProductManager{" +
+                "NIF='" + NIF + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", apellidos='" + apellidos + '\'' +
+                ", horasTrabajadas=" + horasTrabajadas +
+                ", proyecto='" + proyecto + '\'' +
+                '}';
+    }
 }

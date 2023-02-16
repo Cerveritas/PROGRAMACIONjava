@@ -59,4 +59,42 @@ public class DirectorTecnologia {
     public void setHorasTrabajadas(int horasTrabajadas) {
         this.horasTrabajadas = horasTrabajadas;
     }
+
+
+
+    // metodos
+
+
+    public int horasTrabajadas(int cantidad){
+        horasTrabajadas=horasTrabajadas+cantidad;
+        return cantidad;
+    }
+
+
+    public String showInfo() {
+        return "DirectorTecnologia{" +
+                "NIF='" + NIF + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", apellidos='" + apellidos + '\'' +
+                ", horasTrabajadas=" + horasTrabajadas +
+                '}';
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
