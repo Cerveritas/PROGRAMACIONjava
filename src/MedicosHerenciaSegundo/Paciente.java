@@ -58,4 +58,24 @@ public class Paciente {
     public void setEnfermedad(String enfermedad) {
         this.enfermedad = enfermedad;
     }
+
+
+    public String showInfo() {
+        return "Paciente{" +
+                "nombre='" + nombre + '\'' +
+                ", apellidos='" + apellidos + '\'' +
+                ", edad=" + edad +
+                ", enfermedad='" + enfermedad + '\'' +
+                '}';
+    }
+
+    @Override
+    public String toString() {
+        return "Paciente{" +
+                "nombre='" + nombre + '\'' +
+                ", apellidos='" + apellidos + '\'' +
+                ", edad=" + edad +
+                ", enfermedad='" + enfermedad + '\'' +
+                '}';
+    }
 }

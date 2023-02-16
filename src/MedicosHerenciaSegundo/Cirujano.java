@@ -1,4 +1,7 @@
 package MedicosHerenciaSegundo;
+
+import java.util.Arrays;
+
 // CLASE HIJA
 public class Cirujano extends Medicos{
 
@@ -14,8 +17,8 @@ public class Cirujano extends Medicos{
 
     }
 
-    public Cirujano(String nombre, String apellidos, int numeroColegiado, String hospital, int numeroBox) {
-        super(nombre, apellidos, numeroColegiado);
+    public Cirujano(String nombre, String apellidos, int numeroColegiado, String hospital, int numeroBox, Paciente[]pacientes) {
+        super(nombre, apellidos, numeroColegiado,pacientes);
         this.hospital = hospital;
         this.numeroBox = numeroBox;
     }
@@ -37,5 +40,17 @@ public class Cirujano extends Medicos{
 
     public void setNumeroBox(int numeroBox) {
         this.numeroBox = numeroBox;
+    }
+
+
+    public String showInfo() {
+        return "Cirujano{" +
+                "hospital='" + hospital + '\'' +
+                ", numeroBox=" + numeroBox +
+                ", nombre='" + nombre + '\'' +
+                ", apellidos='" + apellidos + '\'' +
+                ", numeroColegiado=" + numeroColegiado +
+                ", paciente=" +  paciente[0].showInfo()+ paciente[1].showInfo()+paciente[2].showInfo()+
+                "} " ;
     }
 }

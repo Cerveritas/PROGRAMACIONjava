@@ -39,12 +39,19 @@ public class Vehiculo {
     }
 
 
-    // metodos
 
 
-    /*public int totalKilometros(){
 
+    public int totalKilometros(int cantidad){
+        kilometrosRealizados = kilometrosRealizados + cantidad;
+        return cantidad;
     }
-*/
 
+
+    public String showInfo() {
+        return "Vehiculo{" +
+                "kilometrosRealizados=" + kilometrosRealizados +
+                ", matricula='" + matricula + '\'' +
+                '}';
+    }
 }

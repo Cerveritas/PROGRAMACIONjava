@@ -1,4 +1,7 @@
 package MedicosHerenciaSegundo;
+
+import java.util.Arrays;
+
 // CLASE HIJA
 public class DeFamilia extends Medicos{
 
@@ -13,8 +16,8 @@ public class DeFamilia extends Medicos{
 
     }
 
-    public DeFamilia(String nombre, String apellidos, int numeroColegiado, String nombreCentroSalud) {
-        super(nombre, apellidos, numeroColegiado);
+    public DeFamilia(String nombre, String apellidos, int numeroColegiado, String nombreCentroSalud,Paciente[]pacientes) {
+        super(nombre, apellidos, numeroColegiado,pacientes);
         this.nombreCentroSalud = nombreCentroSalud;
     }
 
@@ -28,5 +31,15 @@ public class DeFamilia extends Medicos{
 
     public void setNombreCentroSalud(String nombreCentroSalud) {
         this.nombreCentroSalud = nombreCentroSalud;
+    }
+
+    public String showInfo() {
+        return "DeFamilia{" +
+                "nombreCentroSalud='" + nombreCentroSalud + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", apellidos='" + apellidos + '\'' +
+                ", numeroColegiado=" + numeroColegiado +
+                ", paciente=" + Arrays.toString(paciente) +
+                "} " ;
     }
 }

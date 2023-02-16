@@ -1,13 +1,20 @@
 package MedicosHerenciaSegundo;
+
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 // CLASE PADRE
-public class Medicos {
+public class Medicos extends Paciente{
 
     // atributos
 
-    private String nombre;
-    private String apellidos;
-    private int numeroColegiado;
-    //array de paciente
+    protected String nombre;
+    protected String apellidos;
+    protected int numeroColegiado;
+
+    protected Paciente[] paciente = new Paciente[3];
+
+
 
 
     // constructores
@@ -16,10 +23,12 @@ public class Medicos {
 
     }
 
-    public Medicos(String nombre,String apellidos, int numeroColegiado){
+    public Medicos(String nombre, String apellidos, int numeroColegiado, Paciente[]paciente){
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.numeroColegiado = numeroColegiado;
+        this.paciente = paciente;
+
     }
 
     // getters and setters
@@ -47,5 +56,26 @@ public class Medicos {
 
     public void setNumeroColegiado(int numeroColegiado) {
         this.numeroColegiado = numeroColegiado;
+    }
+
+    public Paciente[] getPaciente() {
+        return paciente;
+    }
+
+    public void setPaciente(Paciente[] paciente) {
+        this.paciente = paciente;
+    }
+
+
+    // metodos
+
+
+    public String showInfo() {
+        return "Medicos{" +
+                "nombre='" + nombre + '\'' +
+                ", apellidos='" + apellidos + '\'' +
+                ", numeroColegiado=" + numeroColegiado +
+                ", paciente=" + paciente +
+                "} " ;
     }
 }

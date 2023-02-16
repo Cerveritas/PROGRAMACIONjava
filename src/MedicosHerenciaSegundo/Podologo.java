@@ -1,4 +1,7 @@
 package MedicosHerenciaSegundo;
+
+import java.util.Arrays;
+
 // CLASE HIJA
 public class Podologo extends Medicos{
 
@@ -14,8 +17,8 @@ public class Podologo extends Medicos{
 
     }
 
-    public Podologo(String nombre, String apellidos, int numeroColegiado, String hospital, int planta) {
-        super(nombre, apellidos, numeroColegiado);
+    public Podologo(String nombre, String apellidos, int numeroColegiado, String hospital, int planta, Paciente[]pacientes) {
+        super(nombre, apellidos, numeroColegiado,pacientes);
         this.hospital = hospital;
         this.planta = planta;
     }
@@ -38,5 +41,18 @@ public class Podologo extends Medicos{
 
     public void setPlanta(int planta) {
         this.planta = planta;
+    }
+
+
+
+    public String showInfo() {
+        return "Podologo{" +
+                "hospital='" + hospital + '\'' +
+                ", planta=" + planta +
+                ", nombre='" + nombre + '\'' +
+                ", apellidos='" + apellidos + '\'' +
+                ", numeroColegiado=" + numeroColegiado +
+                ", paciente=" + Arrays.toString(paciente) +
+                "} " ;
     }
 }
