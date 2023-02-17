@@ -78,4 +78,22 @@ public class Medicos extends Paciente{
                 ", paciente=" + paciente +
                 "} " ;
     }
+
+    public boolean trata(){
+        boolean resultado = false;
+
+        for (int i = 0; i < paciente.length; i++){
+            if (nombre.equals(paciente[i].getNombre())){
+                resultado = true;
+                break;
+            }
+        }
+        return resultado;
+    }
+
+    public void pacientes (Paciente [] pacientes){
+        for (int i = 0; i < paciente.length; i++){
+            System.out.println(paciente[i].toString());
+        }
+    }
 }

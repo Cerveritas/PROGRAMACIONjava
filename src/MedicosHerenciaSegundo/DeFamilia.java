@@ -39,7 +39,7 @@ public class DeFamilia extends Medicos{
                 ", nombre='" + nombre + '\'' +
                 ", apellidos='" + apellidos + '\'' +
                 ", numeroColegiado=" + numeroColegiado +
-                ", paciente=" + Arrays.toString(paciente) +
+                ", paciente=" + paciente[0].showInfo() + paciente[1].showInfo() + paciente[2].showInfo()+
                 "} " ;
     }
 }

@@ -69,13 +69,5 @@ public class Paciente {
                 '}';
     }
 
-    @Override
-    public String toString() {
-        return "Paciente{" +
-                "nombre='" + nombre + '\'' +
-                ", apellidos='" + apellidos + '\'' +
-                ", edad=" + edad +
-                ", enfermedad='" + enfermedad + '\'' +
-                '}';
-    }
+
 }

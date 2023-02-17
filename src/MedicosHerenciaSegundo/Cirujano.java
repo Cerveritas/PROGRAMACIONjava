@@ -53,4 +53,12 @@ public class Cirujano extends Medicos{
                 ", paciente=" +  paciente[0].showInfo()+ paciente[1].showInfo()+paciente[2].showInfo()+
                 "} " ;
     }
+
+    public boolean trabaja (String hospi){
+        boolean trabaja = false;
+        if (hospi.toLowerCase().equals(hospital.toLowerCase())){
+            trabaja = true;
+        }
+        return trabaja;
+    }
 }
