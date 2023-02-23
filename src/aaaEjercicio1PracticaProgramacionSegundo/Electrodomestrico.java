@@ -81,6 +81,7 @@ public abstract class Electrodomestrico{
 
     public void comprobarColor(String color){
 
+
     }
 
 

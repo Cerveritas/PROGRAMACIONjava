@@ -11,7 +11,6 @@ public class Lavadora extends Electrodomestrico{
     // CONSTRUCTORES
 
     public Lavadora(){
-
     }
 
 
