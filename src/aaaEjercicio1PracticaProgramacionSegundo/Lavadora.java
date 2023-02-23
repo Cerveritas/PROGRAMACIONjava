@@ -1,4 +1,4 @@
-package aaaEjercicio1PracticaProgramacionSegundo;
+/*package aaaEjercicio1PracticaProgramacionSegundo;
 
 public class Lavadora extends Electrodomestrico{
 
@@ -14,8 +14,8 @@ public class Lavadora extends Electrodomestrico{
     }
 
 
-    public Lavadora(int precioBase, int precioFinal, String color, char consumoEnergetico, int peso, int carga) {
-        super(precioBase, precioFinal, color, consumoEnergetico, peso);
+    public Lavadora(int precioBase, String color, char consumoEnergetico, int peso, int carga) {
+        super(precioBase, color, consumoEnergetico, peso);
         this.carga = carga;
 
     }
@@ -42,3 +42,4 @@ public class Lavadora extends Electrodomestrico{
 
 
 }
+*/

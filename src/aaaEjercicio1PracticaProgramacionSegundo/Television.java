@@ -1,4 +1,4 @@
-package aaaEjercicio1PracticaProgramacionSegundo;
+/*package aaaEjercicio1PracticaProgramacionSegundo;
 
 public class Television extends Electrodomestrico{
 
@@ -15,8 +15,8 @@ public class Television extends Electrodomestrico{
     }
 
 
-    public Television(int precioBase, int precioFinal, String color, char consumoEnergetico, int peso, int resolucion, boolean sintonizadorTDT) {
-        super(precioBase, precioFinal, color, consumoEnergetico, peso);
+    public Television(int precioBase, String color, char consumoEnergetico, int peso, int resolucion, boolean sintonizadorTDT) {
+        super(precioBase, color, consumoEnergetico, peso);
         this.resolucion = resolucion;
         this.sintonizadorTDT = sintonizadorTDT;
     }
@@ -75,3 +75,4 @@ public class Television extends Electrodomestrico{
 
 
 }
+*/
