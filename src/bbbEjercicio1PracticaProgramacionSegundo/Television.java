@@ -1,0 +1,90 @@
+package bbbEjercicio1PracticaProgramacionSegundo;
+
+public class Television extends Electrodomestico{
+
+    // ATRIBUTOS
+
+    private int resolucion = 20;
+    private boolean sintonizadorTDT = false;
+
+
+    // CONSTRUCTORES
+
+    public Television(){
+
+    }
+
+
+    public Television(int precioBase, int precioFinal, int peso, Colores color, ConsumoEnergetico consumo, int resolucion, boolean sintonizadorTDT) {
+        super(precioBase, peso, color, consumo, precioFinal);
+        this.resolucion = resolucion;
+        this.sintonizadorTDT = sintonizadorTDT;
+    }
+
+
+    // GETTERS
+
+
+    public int getResolucion() {
+        return resolucion;
+    }
+
+    public boolean isSintonizadorTDT() {
+        return sintonizadorTDT;
+    }
+
+
+    // SETTERS
+
+
+    public void setResolucion(int resolucion) {
+        this.resolucion = resolucion;
+    }
+
+    public void setSintonizadorTDT(boolean sintonizadorTDT) {
+        this.sintonizadorTDT = sintonizadorTDT;
+    }
+
+
+
+    // METODOS
+
+
+    public int precioFinal(){
+
+        int precioFinalFinal = super.preciofinal;
+
+        if (this.resolucion > 40){
+            precioFinalFinal += precioFinalFinal* 0.3;
+        }
+        if (this.sintonizadorTDT){
+            precioFinalFinal += 50;
+        }
+        return precioFinalFinal;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
