@@ -44,10 +44,17 @@ public class Cuadrado extends Figura implements iAcciones {
     // METODOS
 
     @Override
-    public int dibujar(int lados) {
+    public int dibujar(int lados) throws ExepcionCuadrado {
+
+
 
         System.out.println("De que tamaño quieres tu cuadrado");
         lados = sc.nextInt();
+
+
+        if (lados <= 0){
+            throw new ExepcionCuadrado("Un lado de cuadrado no puede ser menor o igual a 0");
+        }
 
         for (int i = 0; i < lados; i++) {
             for (int j = 0; j < lados; j++) {
