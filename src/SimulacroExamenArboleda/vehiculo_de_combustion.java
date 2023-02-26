@@ -15,12 +15,12 @@ public class vehiculo_de_combustion extends Vehiculo {
 
     }
 
-    public vehiculo_de_combustion(int bastidor, String matricula, String marca, String modelo, int fechaFabricacion, int edadVehiculo, int kilometrosRealizados, int numeroPuertas, int potenciaMotor, String color, int consumo, boolean estadoVehiculo, String tipo_fosil, boolean viscosidad) {
+   /* public vehiculo_de_combustion(int bastidor, String matricula, String marca, String modelo, int fechaFabricacion, int edadVehiculo, int kilometrosRealizados, int numeroPuertas, int potenciaMotor, String color, int consumo, boolean estadoVehiculo, String tipo_fosil, boolean viscosidad) {
         super(bastidor, matricula, marca, modelo, fechaFabricacion, edadVehiculo, kilometrosRealizados, numeroPuertas, potenciaMotor, color, consumo, estadoVehiculo);
         this.tipo_fosil = tipo_fosil;
         this.viscosidad = viscosidad;
     }
-
+*/
     /*****************************************************************************************************************/
 
     // GETTERS

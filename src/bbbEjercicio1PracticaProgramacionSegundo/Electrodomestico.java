@@ -96,7 +96,4 @@ public abstract class Electrodomestico {
 
 
      public abstract int precioFinal();
-
-
-
 }
