@@ -1,44 +1,37 @@
 package bbbEjercicio1PracticaProgramacionSegundo;
 
+import CosasCasaSerias.Taxi;
+
 import java.util.Random;
 
 public class Ejecutable{
     public static void main(String[] args) {
 
-        Electrodomestico[] lista = new Electrodomestico[5];
+        Electrodomestico[] listaElectrodomesticos = new Electrodomestico[5];
+
+        listaElectrodomesticos[0] = new Lavadora(12,4,Colores.azul,ConsumoEnergetico.A,123,34);
+        listaElectrodomesticos[1] = new Lavadora();
+        listaElectrodomesticos[2] = new Television(12,23,3,Colores.azul,ConsumoEnergetico.C,34,false);
+        listaElectrodomesticos[3] = new Television();
+        listaElectrodomesticos[4] = new Television();
 
 
+        double precioTV = 0;
+        double precioLavadora = 0;
+        double precioElectrodomestico = 0;
 
-        Random random = new Random();
-        for (int i = 0; i < lista.length; i++) {
-            if (random.nextBoolean()) {
-                lista[i] = new Television();
-            } else {
-                lista [i] = new Lavadora();
-            }
-        }
-
-
-
-
-
-        double precioTotalTelevisores = 0;
-        double precioTotalLavadoras = 0;
-        double precioTotalElectrodomesticos = 0;
-        for (Electrodomestico electrodomestico : lista) {
-            precioTotalElectrodomesticos += electrodomestico.getPrecioBase();
+        for (Electrodomestico electrodomestico : listaElectrodomesticos) {
             if (electrodomestico instanceof Television) {
-                precioTotalTelevisores += electrodomestico.getPrecioBase();
+                precioTV += electrodomestico.precioFinal();
             } else if (electrodomestico instanceof Lavadora) {
-                precioTotalLavadoras += electrodomestico.getPrecioBase();
+                precioLavadora += electrodomestico.precioFinal();
             }
+            precioElectrodomestico += electrodomestico.precioFinal();
         }
 
-
-
-        System.out.println("Precio total de los televisores: " + precioTotalTelevisores);
-        System.out.println("Precio total de las lavadoras: " + precioTotalLavadoras);
-        System.out.println("Precio total de los electrodomésticos: " + precioTotalElectrodomesticos);
+        System.out.println("Precio total de televisores: " + precioTV);
+        System.out.println("Precio total de lavadoras: " + precioLavadora);
+        System.out.println("Precio total de electrodomesticos: " + precioElectrodomestico);
     }
 }
 

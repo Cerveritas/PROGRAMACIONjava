@@ -84,7 +84,9 @@ public abstract class Electrodomestico {
 
     private void comprobarConsumoEnergetico(char letra){
 
-    }
+        }
+
+
 
     public void comprobarColor(String colorUs) throws ProductoIncorrecto {
         if (colorUs.toLowerCase() == color.toString()){
