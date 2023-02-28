@@ -91,6 +91,19 @@ public class Cuadrado extends Figura implements iAcciones {
 
         return lado;
     }
+
+
+    public int volumen(){
+        lado = 0;
+                                                                                                                        System.out.println(" ");
+        System.out.println("Para calcular el volumen necesito que se vuelva a introducir cuanto mide tu lado");
+
+                                                                                                                        System.out.println(" ");
+        lado = sc.nextInt();
+        lado = (lado * lado) * lado;
+
+        return lado;
+    }
 }
 
 
