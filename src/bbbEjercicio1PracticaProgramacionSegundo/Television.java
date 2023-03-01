@@ -50,41 +50,15 @@ public class Television extends Electrodomestico{
     // METODOS
 
 
-    public int precioFinal(){
-
-        int precioFinalFinal = super.preciofinal;
-
-        if (this.resolucion > 40){
-            precioFinalFinal += precioFinalFinal* 0.3;
+    @Override
+    public double precioFinal(){
+        double valorAñadido = 0;
+        if (resolucion > 40){
+            valorAñadido += getPrecioBase()*0.3;
         }
-        if (this.sintonizadorTDT){
-            precioFinalFinal += 50;
+        if (sintonizadorTDT == true){
+            valorAñadido += 50;
         }
-        return precioFinalFinal;
+        return super.precioFinal()+valorAñadido;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
