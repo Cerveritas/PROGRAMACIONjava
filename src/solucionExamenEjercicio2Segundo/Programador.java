@@ -1,5 +1,7 @@
 package solucionExamenEjercicio2Segundo;
 
+import jdk.jfr.Description;
+
 public final class Programador {  // <-- Al ser una clase perfecta tiene que ser 'final'
 
 
@@ -47,14 +49,14 @@ public final class Programador {  // <-- Al ser una clase perfecta tiene que ser
         /***********************************************************/
 
         try {
-            this.categoria = Categoria.valueOf(categoria);
+            this.categoria = Categoria.valueOf(categoria.toLowerCase());
         } catch (Exception e) {
             throw new IllegalArgumentException("La categoria no es correcta");
         }
 
-        if (Categoria.junior.toString().equals(categoria)){
+        if (Categoria.junior.toString().equals(categoria.toLowerCase())){
             this.salarioBase=18000;
-        } else if (Categoria.senior.toString().equals(categoria)) {
+        } else if (Categoria.senior.toString().equals(categoria.toLowerCase())) {
             this.salarioBase=27000;
         }
         else {
@@ -127,8 +129,13 @@ public final class Programador {  // <-- Al ser una clase perfecta tiene que ser
         this.lenguaje_programacion = lenguaje_programacion;
     }
 
-    public void setCategoria(Categoria categoria) {
-        this.categoria = categoria;
+    public void setCategoria(String categoria) throws IllegalArgumentException {
+        try {
+            this.categoria = Categoria.valueOf(categoria);
+        } catch (Exception e) {
+            throw new IllegalArgumentException("La categoria no es correcta");
+        }
+        this.categoria = Categoria.valueOf(categoria.toLowerCase());
     }
 
     /** METODOS **/
@@ -222,10 +229,10 @@ public final class Programador {  // <-- Al ser una clase perfecta tiene que ser
     }
 
 
-
-
-
-
-
-
+    @Override
+    public String toString() {
+        return  "El empleado "+nombre+" con dni "+dni+" con perfil "+categoria+" programando en "+lenguaje_programacion+" " +
+                "tiene un salario base de "+salarioBase+" que al aplicarle la retencion de "+retencion+"" +
+                "le supone un salario neto de "+salarioNeto;
+    }
 }
