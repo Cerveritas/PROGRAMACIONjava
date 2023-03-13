@@ -1,5 +1,11 @@
 package solucionExamenEjercicio1Segundo;
 
+/**
+ * @author sergio cervera
+ * @version 1.0
+ * Esta clase permite almacenar informacion sobre emisoras
+ * */
+
 public abstract class Emisora implements Emitible {
 
     /** ATRIBUTOS **/ //  <-- al hacerlo static lo hacemos atributos clase, que todos los objetos comparten estas varibale
@@ -20,6 +26,12 @@ public abstract class Emisora implements Emitible {
     }
 
     // constructor parametrizado
+
+    /**
+     * @param1 nombre_emisora
+     * @param2 anyo_creacion
+     * @param3 num_oyentes
+     * */
     public Emisora(String nombre_emisora, int anyo_creacion, int num_oyentes) throws CreacionInvalida{
 
     //**********************************************************
@@ -27,7 +39,7 @@ public abstract class Emisora implements Emitible {
     //**********************************************************
         this.identificador = numero_emisoras++;
     //**********************************************************
-        if (anyo_creacion > 1979) {
+        if (anyo_creacion < 1879) {
             throw new CreacionInvalida("el año de creacion de la radie debe ser igual o superior a 1879");
         }
         this.anyo_creacion = anyo_creacion;
@@ -75,7 +87,7 @@ public abstract class Emisora implements Emitible {
     }
 
     public void setAnyo_creacion(int anyo_creacion) throws CreacionInvalida {
-        if (anyo_creacion > 1979) {
+        if (anyo_creacion < 1879) {
             throw new CreacionInvalida("el año de creacion de la radie debe ser igual o superior a 1879");
         }
         this.anyo_creacion = anyo_creacion;
@@ -86,9 +98,16 @@ public abstract class Emisora implements Emitible {
     }
 
     /** METODOS **/
+
+    //metodo abstracto ganancias
+
+    /**
+     * metodo abstracto que seran las hijas quien las implemente
+     *
+     * */
     public abstract double ganancias();
 
-
+    //metodo estaEmitiendo
     public boolean estaEmitiendo(){
         return emitiendo;
     }
