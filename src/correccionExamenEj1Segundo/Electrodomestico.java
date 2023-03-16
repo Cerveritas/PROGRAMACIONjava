@@ -25,19 +25,28 @@ public abstract class Electrodomestico {
     public Electrodomestico(float precio_base, float peso) {
         this.precio_base = precio_base;
         this.peso = peso;
+        this.precio_final = precioFinal();
     }
 
     // parametrizado
 
-    public Electrodomestico(float precio_base, float precio_final, String color, ConsumoEnergetico consumo, float peso) throws ProductoIncorrecto {
-        this.precio_base = precio_base;
-        this.precio_final = precio_final;
+    public Electrodomestico(float precio_base, float precio_final, String color, String consumo, float peso) throws ProductoIncorrecto {
+        if (comoprobarConsumoEnergetico(consumo.toUpperCase().charAt(0))){
+            this.precio_base = precio_base;
+            this.consumo = ConsumoEnergetico.valueOf(consumo.toUpperCase());
+        }
+        else{
+            throw new ProductoIncorrecto("No es correcto la letra con el precio");
+        }
 
-        if (    comprobarColor(color)) {
+
+        this.precio_final = precioFinal();
+
+        if (comprobarColor(color)) {
             this.color = color;
         }
 
-        this.consumo = consumo;
+
         this.peso = peso;
     }
 
@@ -107,11 +116,43 @@ public abstract class Electrodomestico {
         return resultado;
     }
 
+    public float precioFinal(){
 
+        switch (consumo){
+            case A:
+                precio_final = precio_base + 100;
+                break;
 
+            case B:
+                precio_final = precio_base + 80;
+                break;
 
+            case C:
+                precio_final = precio_base + 60;
+                break;
 
+            case D:
+                precio_final = precio_base + 50;
+                break;
 
+            case E:
+                precio_final = precio_base + 30;
+                break;
 
+            case F:
+                precio_final = precio_base + 10;
+                break;
+        }
+        if (peso > 0 && peso <= 19){
+            precio_final += 10;
+        } else if (peso >= 20 && peso <= 49) {
+            precio_final += 50;
+        } else if (peso >= 50 && peso <= 79) {
+            precio_final += 80;
+        }else {
+            precio_final += 100;
+        }
 
+        return precio_final;
+    }
 }
