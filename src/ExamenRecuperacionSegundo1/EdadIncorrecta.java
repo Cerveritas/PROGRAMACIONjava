@@ -1,4 +1,4 @@
-package ExamenRecuperacionSegundo;
+package ExamenRecuperacionSegundo1;
 
 public class EdadIncorrecta extends Exception{
 
