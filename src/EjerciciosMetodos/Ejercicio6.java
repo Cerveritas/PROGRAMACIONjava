@@ -47,7 +47,7 @@ public class Ejercicio6 {
                 break;
 
             case 5:
-                if(verSiNumeroEsta(numeros) == true){
+                if(verSiNumeroEsta(numeros)){
                     System.out.println("EL numero esta");
                 }else {System.out.println("EL numero no esta");}
                 break;

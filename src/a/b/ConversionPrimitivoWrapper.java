@@ -26,7 +26,7 @@ public class ConversionPrimitivoWrapper {
         System.out.println("La variable tipo primitivo int c vale ahora " + c);
 
         //beneficios de usar clases envoltorios o wrapper
-        System.out.println("este metodo permite pasar una variable de tipo integer a string "+a.toString());
+        System.out.println("este metodo permite pasar una variable de tipo integer a string "+ a);
         System.out.println("¿es "+a+" igual a b "+b +a.equals(b));
         System.out.println("¿es igual a d "+a.equals(d));
         System.out.println("convertir la variable b en float "+d.floatValue());

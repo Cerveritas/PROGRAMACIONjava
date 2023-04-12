@@ -28,7 +28,7 @@ public class UsoEjercicioPractico2i2 {
 
 
 
-        System.out.println(sc.toString());
+        System.out.println(sc);
 
 
     }

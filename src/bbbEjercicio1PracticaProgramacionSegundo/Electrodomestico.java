@@ -118,7 +118,7 @@ public abstract class Electrodomestico {
             if (Colores.values()[i].toString().equals(color)) encontrado = true;
         }
 
-        if (encontrado == false) {
+        if (!encontrado) {
             throw new ProductoIncorrecto("El color no está dentro de la gama");
         }
     }

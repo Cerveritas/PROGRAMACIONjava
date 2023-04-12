@@ -3,7 +3,7 @@ package sesion2411;
 import java.util.Scanner;
 
 public class EjercicioArrayEnumerado {
-    private static int [][] notas = new int[2][3];
+    private static final int [][] notas = new int[2][3];
     public static void main(String[] args) {
 
         System.out.println("Lo primero que haremos sera meter los datos de las notas dentro de un array BIDIMEMSIONAL");

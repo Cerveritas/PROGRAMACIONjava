@@ -11,7 +11,7 @@ public class UsoHerenciasPersonas {
         System.out.println("Con nombre "+pro.getNombre());
         System.out.println("Con la edad de "+pro.getEdad());
         System.out.println("Tiene un salario de "+pro.getSalario()+" €");
-        System.out.println("El ToString de profesor es "+pro.toString());
+        System.out.println("El ToString de profesor es "+ pro);
 
 
 

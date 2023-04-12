@@ -25,15 +25,13 @@ public class CreaArrayExamen {
         System.out.println("(1) - Ver el Array");
         int opcion=0;
         opcion= sc.nextInt();
-        switch (opcion)
-        {
-            case 1: for(int i =0; i<ArrayNumeros.length; i++){
-                System.out.println(ArrayNumeros[i]);break;
+        if (opcion == 1) {
+            for (int i = 0; i < ArrayNumeros.length; i++) {
+                System.out.println(ArrayNumeros[i]);
+                break;
             }
-
-            default:System.out.println("El numero introducido es incorrecto, vuelve a intentarlo");
         }
-
+        System.out.println("El numero introducido es incorrecto, vuelve a intentarlo");
 
 
     }

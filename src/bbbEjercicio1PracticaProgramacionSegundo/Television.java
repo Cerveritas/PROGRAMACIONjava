@@ -56,7 +56,7 @@ public class Television extends Electrodomestico{
         if (resolucion > 40){
             valorAñadido += getPrecioBase()*0.3;
         }
-        if (sintonizadorTDT == true){
+        if (sintonizadorTDT){
             valorAñadido += 50;
         }
         return super.precioFinal()+valorAñadido;

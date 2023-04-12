@@ -2,7 +2,7 @@ package CosasCasaSerias;
 
 public class Alumno {
 
-    private String nombre;
+    private final String nombre;
     Alumno(String nombre){
         this.nombre=nombre;
     }

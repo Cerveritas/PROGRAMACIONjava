@@ -4,12 +4,12 @@ public class mascota {
     //atributos, campos, variables
     //estos siempre tienen que ser privados
 
-    private String nombre;
+    private final String nombre;
     private int edad;
-    private String raza;
-    private String color;
-    private int peso;
-    private int altura;
+    private final String raza;
+    private final String color;
+    private final int peso;
+    private final int altura;
     private char genero;
 
     //metodos

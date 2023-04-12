@@ -2,8 +2,8 @@ package excepcionesSegundo;
 
 public class PersonaEJ2 {
 
-    private String nombre;
-    private int edad;
+    private final String nombre;
+    private final int edad;
 
     public PersonaEJ2(String nombre, int edad) throws EdadIncorrecta {
         if (edad<=0 /*|| nombre.isEmpty()/*/){  // <-- LO QUE HAY DENTRO ES OTRA OPCION EN VEZ DE HABER DOS "IF"

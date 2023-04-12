@@ -3,5 +3,5 @@ package bbbEjercico2PracticaProgramacionSegundo;
 public interface iAcciones {
 
 
-    public int dibujar(int lados) throws ExepcionCuadrado;
+    int dibujar(int lados) throws ExepcionCuadrado;
 }

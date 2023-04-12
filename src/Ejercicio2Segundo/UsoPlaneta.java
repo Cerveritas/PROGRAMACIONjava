@@ -47,10 +47,7 @@ public class UsoPlaneta {
 
         System.out.println("Es observable el planeta?: S-N");
         char opcion = sc.next().toUpperCase().charAt(0);
-        boolean observable = false;
-        if(opcion == 'S'){
-            observable = true;
-        }
+        boolean observable = opcion == 'S';
 
         Planeta planeta3 = new Planeta(nombre,cantidadSatelites,masa,volumen,diametro,distancia,tamanio,observable);
 
@@ -64,7 +61,7 @@ public class UsoPlaneta {
 
         planeta1.imprimir();
 
-        System.out.println(planeta3.toString());
+        System.out.println(planeta3);
 
         System.out.println("La densidad del planeta dos es "+planeta2.calcularDensidad());
 

@@ -55,10 +55,7 @@ public class Cirujano extends Medicos{
     }
 
     public boolean trabaja (String hospi){
-        boolean trabaja = false;
-        if (hospi.toLowerCase().equals(hospital.toLowerCase())){
-            trabaja = true;
-        }
+        boolean trabaja = hospi.equalsIgnoreCase(hospital);
         return trabaja;
     }
 }

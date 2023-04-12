@@ -8,7 +8,7 @@ public class Ejercicio3Sergio {
         // declaracion array de int
 
         int dimension = solicitarDimension();
-        int array[] = new int[dimension];
+        int[] array = new int[dimension];
 
 
 

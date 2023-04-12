@@ -27,30 +27,30 @@ public class TusFiguras {
         // determina la figura
         if (numero == 1)
         {
-            System.out.printf("\033[36m  ██████████  \n");
-            System.out.printf("\033[36m  █        █  \n");
-            System.out.printf("\033[36m  █        █  \n");
-            System.out.printf("\033[36m  ██████████  \n");
+            System.out.print("\033[36m  ██████████  \n");
+            System.out.print("\033[36m  █        █  \n");
+            System.out.print("\033[36m  █        █  \n");
+            System.out.print("\033[36m  ██████████  \n");
         }
         else if (numero == 2)
         {
-            System.out.printf("\033[35m      ██      \n");
-            System.out.printf("\033[35m     █  █     \n");
-            System.out.printf("\033[35m    █    █    \n");
-            System.out.printf("\033[35m   █      █   \n");
-            System.out.printf("\033[35m  █        █  \n");
-            System.out.printf("\033[35m  ██████████  \n");
+            System.out.print("\033[35m      ██      \n");
+            System.out.print("\033[35m     █  █     \n");
+            System.out.print("\033[35m    █    █    \n");
+            System.out.print("\033[35m   █      █   \n");
+            System.out.print("\033[35m  █        █  \n");
+            System.out.print("\033[35m  ██████████  \n");
         }
         else if (numero == 3)
         {
-            System.out.printf("\033[32m      ██      \n");
-            System.out.printf("\033[32m     █  █     \n");
-            System.out.printf("\033[32m    █    █    \n");
-            System.out.printf("\033[32m   █      █   \n");
-            System.out.printf("\033[32m   █      █   \n");
-            System.out.printf("\033[32m    █    █    \n");
-            System.out.printf("\033[32m     █  █     \n");
-            System.out.printf("\033[32m      ██      \n");
+            System.out.print("\033[32m      ██      \n");
+            System.out.print("\033[32m     █  █     \n");
+            System.out.print("\033[32m    █    █    \n");
+            System.out.print("\033[32m   █      █   \n");
+            System.out.print("\033[32m   █      █   \n");
+            System.out.print("\033[32m    █    █    \n");
+            System.out.print("\033[32m     █  █     \n");
+            System.out.print("\033[32m      ██      \n");
         }
         // en el caso que no metamos un numero pedido (1, 2, 3), dara error.
         else
