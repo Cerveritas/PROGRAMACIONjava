@@ -1,8 +1,4 @@
-package bbbEjercicio1PracticaProgramacionSegundo;
-
-import CosasCasaSerias.Taxi;
-
-import java.util.Random;
+package Ejercicio1PracticaProgramacionSegundo;
 
 public class Ejecutable{
     public static void main(String[] args) {

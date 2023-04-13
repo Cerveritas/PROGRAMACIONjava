@@ -1,4 +1,4 @@
-package bbbEjercico2PracticaProgramacionSegundo;
+package Ejercicio2PracticaProgramacionSegundo;
 
 public interface iAcciones {
 

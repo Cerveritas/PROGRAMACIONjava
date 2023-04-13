@@ -1,6 +1,4 @@
-package bbbEjercico2PracticaProgramacionSegundo;
-
-import java.util.Scanner;
+package Ejercicio2PracticaProgramacionSegundo;
 
 public class UsoFigura {
     public static void main(String[] args) {

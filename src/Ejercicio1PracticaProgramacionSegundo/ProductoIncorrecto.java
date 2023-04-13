@@ -1,7 +1,5 @@
-package bbbEjercicio1PracticaProgramacionSegundo;
+package Ejercicio1PracticaProgramacionSegundo;
 
-
-import bbbEjercico2PracticaProgramacionSegundo.ExepcionCuadrado;
 
 public class ProductoIncorrecto extends Exception {
 
