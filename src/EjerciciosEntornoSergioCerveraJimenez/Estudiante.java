@@ -1,10 +1,10 @@
 package EjerciciosEntornoSergioCerveraJimenez;
 
 public class Estudiante {
-    private String nombre;
-    private int edad;
-    private char genero;
-    private double promedio;
+    private final String nombre;
+    private final int edad;
+    private final char genero;
+    private final double promedio;
 
     public Estudiante(String nombre, int edad, char genero, double promedio) {
         this.nombre = nombre;

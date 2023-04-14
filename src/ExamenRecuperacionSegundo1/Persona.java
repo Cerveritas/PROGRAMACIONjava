@@ -1,4 +1,4 @@
-package ExamenRecuperacionSegundo;
+package ExamenRecuperacionSegundo1;
 
 public class Persona {
 
@@ -49,7 +49,7 @@ public class Persona {
         this.edad = edad;
         this.DNI = DNI;
         this.dni_completo = generarDNI();
-        if (!Sexo.valueOf(sexo).equals(Sexo.M) || !Sexo.valueOf(sexo).equals(Sexo.M)){
+        if (!Sexo.valueOf(sexo).equals(Sexo.M) && !Sexo.valueOf(sexo).equals(Sexo.H)){
             throw new SexoIncorrecto("El sexo incorrecto no es válido");
         }
         this.sexo = Sexo.valueOf(sexo);
@@ -112,8 +112,8 @@ public class Persona {
 
 
     public void setSexo(String sexo) throws SexoIncorrecto {
-        if (!Sexo.valueOf(sexo).equals(Sexo.M) || !Sexo.valueOf(sexo).equals(Sexo.M)){
-            throw new SexoIncorrecto("El sexo incorrecto no es válido");
+        if (!Sexo.valueOf(sexo).equals(Sexo.M) && !Sexo.valueOf(sexo).equals(Sexo.H)){
+            throw new SexoIncorrecto("El sexo introducido no es válido");
         }
         this.sexo = Sexo.valueOf(sexo);
     }
@@ -220,13 +220,8 @@ public class Persona {
      * @return retornamos si alguien es mayor de edad(TRUE) o menor de edad(FALSE)
      */
 
-    private boolean esMayorEdad(){
-        boolean resultado = false;
-
-        if (edad >= 18){
-            resultado = true;
-        }
-
+    public boolean esMayorEdad(){
+        boolean resultado = edad >= 18;
 
 
         return resultado;

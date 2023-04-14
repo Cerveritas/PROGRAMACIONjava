@@ -20,12 +20,8 @@ public class EliminarNodo {
         for (int i = 0; i < array.length-1; i++) {
             if(array[i] == elementoEliminar){
                 newArray = new int[array.length - 1];
-                for(int index = 0; index < i; index++){
-                    newArray[index] = array[index];
-                }
-                for(int j = i; j < array.length - 1; j++){
-                    newArray[j] = array[j+1];
-                }
+                System.arraycopy(array, 0, newArray, 0, i);
+                System.arraycopy(array, i + 1, newArray, i, array.length - 1 - i);
                 break;
             }
         }

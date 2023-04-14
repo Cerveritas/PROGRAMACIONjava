@@ -2,7 +2,7 @@ package CosasCasaSerias;
 
 public class Universidad {
 
-    private String nombre;
+    private final String nombre;
 
     //constructor
     Universidad(String name){

@@ -102,10 +102,6 @@ public class Programador {
 
     public boolean lenguajeProgramacion(String lenguaje){
 
-        if (lenguaje == "java") {
-            return true;
-        }else{
-            return false;
-        }
+        return lenguaje == "java";
     }
 }

@@ -56,7 +56,7 @@ public class Ejercicio1 {
                         meses mes2 = meses.valueOf(sc.next().toUpperCase());
                     System.out.println("Introduce el segundo mes a comparar");
                         meses mes1 = meses.valueOf(sc.next().toUpperCase());
-                    if (compararTemperaturas(mes1, mes2, temperaturas) == true){
+                    if (compararTemperaturas(mes1, mes2, temperaturas)){
                         System.out.println("Los meses mencionados tienen la misma temperatura.");
                     }else{
                         System.out.println("Los meses mencionados tienen una temperatura distinta.");
@@ -124,11 +124,7 @@ public class Ejercicio1 {
 
     // METODO 7 --> COMPARAR LA TEMPERATURA DE DOS MESES Y VER SI SON IGUALES O NO
     public static boolean compararTemperaturas(meses mes1, meses mes2, float[]temperaturas){
-        if (temperaturas[sacar_indice(mes1)] == temperaturas[sacar_indice(mes2)]) {
-            return true;
-        }else{
-            return false;
-        }
+        return temperaturas[sacar_indice(mes1)] == temperaturas[sacar_indice(mes2)];
     }
 
 

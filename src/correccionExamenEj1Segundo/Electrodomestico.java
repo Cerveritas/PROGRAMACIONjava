@@ -94,7 +94,7 @@ public abstract class Electrodomestico {
     /** METODOS **/
 
     public boolean comprobarColor(String color) throws ProductoIncorrecto{
-        if(color.toLowerCase().equals("blanco") || color.toLowerCase().equals("negro") || color.toLowerCase().equals("rojo") || color.toLowerCase().equals("azul") || color.toLowerCase().equals("gris")){
+        if(color.equalsIgnoreCase("blanco") || color.equalsIgnoreCase("negro") || color.equalsIgnoreCase("rojo") || color.equalsIgnoreCase("azul") || color.equalsIgnoreCase("gris")){
             return true;
         }else{
             throw new ProductoIncorrecto("Ese color no esta dentro de la gama");
@@ -103,16 +103,13 @@ public abstract class Electrodomestico {
 
 
     public boolean comoprobarConsumoEnergetico(char letra){
-        boolean resultado = false;
-
-        if (ConsumoEnergetico.A.toString().equals(letra) && precio_base >= 100 ||
+        boolean resultado = ConsumoEnergetico.A.toString().equals(letra) && precio_base >= 100 ||
                 ConsumoEnergetico.B.toString().equals(letra) && precio_base >= 80 && precio_base < 100 ||
-                    ConsumoEnergetico.C.toString().equals(letra) && precio_base >= 60 && precio_base < 80 ||
-                        ConsumoEnergetico.D.toString().equals(letra) && precio_base >= 50 && precio_base < 60 ||
-                            ConsumoEnergetico.E.toString().equals(letra) && precio_base >= 30 && precio_base < 50 ||
-                                ConsumoEnergetico.F.toString().equals(letra) && precio_base >= 10 && precio_base < 30){
-            resultado = true;
-        }
+                ConsumoEnergetico.C.toString().equals(letra) && precio_base >= 60 && precio_base < 80 ||
+                ConsumoEnergetico.D.toString().equals(letra) && precio_base >= 50 && precio_base < 60 ||
+                ConsumoEnergetico.E.toString().equals(letra) && precio_base >= 30 && precio_base < 50 ||
+                ConsumoEnergetico.F.toString().equals(letra) && precio_base >= 10 && precio_base < 30;
+
         return resultado;
     }
 

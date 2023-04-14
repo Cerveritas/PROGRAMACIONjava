@@ -20,7 +20,7 @@ public class DocumentacionJavaDoc {
         String nombre = "Sergio";
 
         System.out.print("Cadena con salto de linea\n");
-        System.out.println("Cadena con comillas simples --> "+"\'"+nombre+"\'");
+        System.out.println("Cadena con comillas simples --> "+ "'" +nombre+ "'");
         System.out.println("Cadena con comillas dobles --> "+"\""+nombre+"\"");
 
 

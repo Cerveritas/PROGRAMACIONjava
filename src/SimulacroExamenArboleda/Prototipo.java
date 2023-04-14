@@ -3,7 +3,7 @@ package SimulacroExamenArboleda;
 public interface Prototipo {
 
 
-    public void apagar();
+    void apagar();
 
-    public void encender();
+    void encender();
 }

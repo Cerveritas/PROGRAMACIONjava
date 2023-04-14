@@ -56,7 +56,7 @@ public class UsoVajero {
                                                                                                                         System.out.print("\u001B[0m");
 
         Viajero viajero2 = new Viajero(DNI,nombre,apellido1,apellido2,nacionalidad,direccion);
-        System.out.println(viajero2.toString());
+        System.out.println(viajero2);
 
 
 

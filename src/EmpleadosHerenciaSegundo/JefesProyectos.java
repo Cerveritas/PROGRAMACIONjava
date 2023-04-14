@@ -91,11 +91,7 @@ public class JefesProyectos {
 
     public boolean proyectoDado(String proyecto){
 
-        if (proyecto == "proyecProgramacion") {
-            return true;
-        }else{
-            return false;
-        }
+        return proyecto == "proyecProgramacion";
     }
 }
 
