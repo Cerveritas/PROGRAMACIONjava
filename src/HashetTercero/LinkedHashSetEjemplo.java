@@ -1,16 +1,17 @@
 package HashetTercero;
 
-import java.util.HashSet;
 import java.util.Iterator;
+import java.util.LinkedHashSet;
 
-public class HashSetEjemplo {
+public class LinkedHashSetEjemplo {
+
     public static void main(String[] args) {
 
-        HashSet<String> nombres = new HashSet<>();
+        LinkedHashSet<String> nombres = new LinkedHashSet<>();
         nombres.add("Juan");
         nombres.add("Pia");
         nombres.add(null);
-        Iterator<String> itr = nombres.iterator(); // <-- Es para recorrer la estructura el iterador
+        Iterator<String> itr = nombres.iterator();
         while (itr.hasNext()){
             System.out.println(itr.next());
         }
@@ -22,15 +23,11 @@ public class HashSetEjemplo {
         nombres.add("Maria");
         nombres.add("Sofia");
         nombres.remove("Sofia");
+
         Iterator<String> itr2 = nombres.iterator();
         while (itr2.hasNext()){
             System.out.println(itr2.next());
         }
-
-
-
-
-
 
 
 
