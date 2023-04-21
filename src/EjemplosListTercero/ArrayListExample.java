@@ -25,7 +25,7 @@ public class ArrayListExample {
         System.out.println("posicion de la primera ocurrencia de 3 -> "+coleccion_num.indexOf(3));
         System.out.println("posicion de la ultima ocurrencia de 3 -> "+coleccion_num.lastIndexOf(3));
         System.out.println("Tamaño de la lista "+coleccion_num.size());
-        System.out.println("Sublista 0-2 "+coleccion_num.subList(0,2).toArray());
+        System.out.println("Sublista 0-2 "+coleccion_num.subList(0,2).toString());
         System.out.println("Cambiar el valor de la posicion ultima "+coleccion_num.set(coleccion_num.size()-1, 6));
         System.out.println(coleccion_num.toString());
 
