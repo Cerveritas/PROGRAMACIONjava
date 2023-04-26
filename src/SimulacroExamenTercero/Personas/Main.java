@@ -1,5 +1,5 @@
 
-package SimulacroExamenTercero;
+package SimulacroExamenTercero.Personas;
 
 public class Main {
     public static void main(String[] args) {

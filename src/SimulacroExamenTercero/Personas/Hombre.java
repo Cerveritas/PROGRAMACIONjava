@@ -1,6 +1,9 @@
-package SimulacroExamenTercero;
+package SimulacroExamenTercero.Personas;
 
-public class Hombre extends Persona{
+import SimulacroExamenTercero.Personas.Categoria;
+import SimulacroExamenTercero.Personas.Persona;
+
+public class Hombre extends Persona {
 
     /** ATRIBUTOS **/
     private boolean barba;

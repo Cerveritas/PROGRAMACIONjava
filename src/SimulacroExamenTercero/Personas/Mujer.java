@@ -1,6 +1,9 @@
-package SimulacroExamenTercero;
+package SimulacroExamenTercero.Personas;
 
-public class Mujer extends Persona{
+import SimulacroExamenTercero.Personas.Categoria;
+import SimulacroExamenTercero.Personas.Persona;
+
+public class Mujer extends Persona {
 
 
     /** ATRIBUTOS **/

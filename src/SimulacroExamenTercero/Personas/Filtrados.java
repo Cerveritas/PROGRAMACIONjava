@@ -1,4 +1,6 @@
-package SimulacroExamenTercero;
+package SimulacroExamenTercero.Personas;
+
+import SimulacroExamenTercero.Personas.Persona;
 
 import java.util.ArrayList;
 import java.util.Comparator;

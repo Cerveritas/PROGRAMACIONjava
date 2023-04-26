@@ -1,4 +1,4 @@
-package SimulacroExamenTercero;
+package SimulacroExamenTercero.Personas;
 
 public abstract class Persona {
 
