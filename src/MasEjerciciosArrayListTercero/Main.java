@@ -1,4 +1,4 @@
-/*
+
 package MasEjerciciosArrayListTercero;
 
 import java.util.ArrayList;
@@ -50,7 +50,9 @@ public class Main {
 
                 case 3:
                     System.out.println("Introduzca el numero que desea modificar");
-                    numero = sc.nextDouble();
+                    numero_antiguo = sc.nextDouble();
+                    System.out.println("Introduzca el nuevo numero para insertar");
+                    numero_nuevo = sc.nextDouble();
                     modificar(numero_antiguo, numero_nuevo);
                     break;
 
@@ -78,12 +80,30 @@ public class Main {
         }while (opcion != 0);
     }
 
+    private static void imprimir_array() {
+        System.out.println(lista_reales.toString());
+    }
+
+
+    private static void add_specific(double numero, int posicion) {
+        lista_reales.set(posicion, numero);
+    }
+
+
+    private static void eliminar(double numero) {
+        lista_reales.remove(numero);
+
+        // otra opcion --> lista_reales.remove(lista_reales.indexOf(numero));
+
+    }
+
     private static void modificar(double numero_antiguo, double numero_nuevo) {
         if (lista_reales.contains(numero_antiguo)){
-            int posicion=lista_reales.indexOf(numero_antiguo);
+            int posicion = lista_reales.indexOf(numero_antiguo);
             lista_reales.set(posicion, numero_nuevo);
         }
     }
+
 
     private static void buscar(double numero) {
         int posicion = lista_reales.indexOf(numero);
@@ -99,9 +119,4 @@ public class Main {
     public static void add(double numero) {
         lista_reales.add(numero);
     }
-
-
-
-
 }
-*/
