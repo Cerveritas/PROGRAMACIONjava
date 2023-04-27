@@ -80,7 +80,16 @@ public class UsoPersona {
 
 
         Persona p1 = new Persona("123456789N", "Nahiara", "Zarco", "Garcia", 'F', 20, 60);
+        lista_personas.add(p1);
 
+        Persona p2 = new Persona("987654321S", "Sergio", "Cervera", "Jimenez", 'M', 21, 70);
+        lista_personas.add(p2);
+
+        Persona p3 = new Persona("46756764R", "Alejandro", "Recarte", "Rebollo", 'P', 22, 80);
+        lista_personas.add(p3);
+
+
+        System.out.println(lista_personas.toString());
 
     }
 }
