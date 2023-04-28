@@ -31,7 +31,7 @@ public class UsoPersona {
 
             switch (opcion){
                 case 0:
-                    System.out.println("Gracias por usar el programa");
+                    System.out.println("Gracias por usar el programa...");
                     break;
 
                 case 1: add();
