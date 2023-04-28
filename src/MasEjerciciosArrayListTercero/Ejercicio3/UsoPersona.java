@@ -1,7 +1,6 @@
 package MasEjerciciosArrayListTercero.Ejercicio3;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.Scanner;
 
 public class UsoPersona {
@@ -11,18 +10,23 @@ public class UsoPersona {
     public static void main(String[] args) {
 
 
+
+/*
+        lista_personas.add(new Persona("123456789N", "Nahiara", "Zarco", "Garcia", 'F', 20, 60));
+        lista_personas.add(new Persona("987654321S", "Sergio", "Cervera", "Jimenez", 'M', 21, 70));
+        lista_personas.add(new Persona("46756764R", "Alejandro", "Recarte", "Rebollo", 'P', 22, 80));
+
+*/
+
         int opcion = 0;
 
         do {
-            System.out.println("------------------------------------------------------------");
             System.out.println("0 - Salir del programa");
             System.out.println("1 - Añadir persona al arrayList");
             System.out.println("2 - Buscar persona por DNI en el arrayList");
             System.out.println("3 - Eliminar persona por DNI del arrayList");
             System.out.println("4 - Ordenar por apellidos");
             System.out.println("5 - Ordenar por apellidos y sexo");
-            System.out.println("6 - Imprimir arraylist");
-            System.out.println("------------------------------------------------------------ ");
             opcion = sc.nextInt();
 
             switch (opcion){
@@ -30,81 +34,25 @@ public class UsoPersona {
                     System.out.println("Gracias por usar el programa");
                     break;
 
-                case 1:
-                    add();
+                case 1: add();
                     break;
 
                 case 2:
-                    System.out.println("Introducir el DNI del usuario");
-                    String dni = sc.next();
-                    buscar(dni);
                     break;
 
                 case 3:
-                    System.out.println("Introduce el dni de la persona que deseas eliminar");
-                    String DNI = sc.next();
-                    eliminar(DNI);
                     break;
 
                 case 4:
-                    ordenarApellidos();
                     break;
 
                 case 5:
-                    ordenarApellidosySexo();
-                    break;
-
-                case 6:
-                    imprimir();
                     break;
 
                 default:
                     System.out.println("El numero introducido no es correcto");
             }
         } while (opcion != 0);
-    }
-
-    private static void ordenarApellidosySexo() {
-        System.out.println("ORDENACION POR APELLIDOS Y SEXO");
-        lista_personas.sort(Comparator.comparing(Persona::getApellido1).thenComparing(Persona::getSexo));
-        imprimir();
-    }
-
-    private static void ordenarApellidos() {
-        System.out.println("ORDENACION POR APELLIDOS");
-        lista_personas.sort(Comparator.comparing(Persona::getApellido1));
-        imprimir();
-    }
-
-    private static void eliminar(String dni) {
-        for (Persona p : lista_personas){
-            if (p.getDni().equals(dni)){
-                lista_personas.remove(p);
-            }
-        }
-        System.out.println("eliminado correctamente...");
-    }
-
-    private static void imprimir() {
-        System.out.println("imprimiendo array...");
-        for (Persona p:lista_personas){
-            System.out.println(p.toString().toString());
-        }
-    }
-
-    private static void buscar(String dni) {
-        boolean esta = false;
-        for (Persona p : lista_personas){
-            if (p.getDni().equals(dni)){
-                esta = true;
-                break;
-            }
-        }
-        if (esta){
-            System.out.println("El dni "+dni+" esta en el arrayList");
-        } else {
-            System.out.println("Lo sentimos pero el "+dni+" no se encuentra en el arraylist");
-        }
     }
 
 
@@ -131,9 +79,17 @@ public class UsoPersona {
         double peso = sc.nextInt();
 
 
-        Persona p1 = new Persona (dni, nombre, apellido1, apellido2, sexo, edad, peso);
+        Persona p1 = new Persona("123456789N", "Nahiara", "Zarco", "Garcia", 'F', 20, 60);
         lista_personas.add(p1);
-                                                                                                                        System.out.println(" ");
-        System.out.println("usuario registrado en el arraylist...");
+
+        Persona p2 = new Persona("987654321S", "Sergio", "Cervera", "Jimenez", 'M', 21, 70);
+        lista_personas.add(p2);
+
+        Persona p3 = new Persona("46756764R", "Alejandro", "Recarte", "Rebollo", 'P', 22, 80);
+        lista_personas.add(p3);
+
+
+        System.out.println(lista_personas.toString());
+
     }
 }
