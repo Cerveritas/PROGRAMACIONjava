@@ -1,4 +1,4 @@
-package MasEjerciciosArrayListTercero.Ejercicio3;
+package MasEjerciciosArrayListTerceroo.Ejercicio3;
 
 public class Persona {
 

@@ -1,4 +1,4 @@
-package MasEjerciciosArrayListTercero.Ejercicio2;
+package MasEjerciciosArrayListTerceroo.Ejercicio2;
 
 public class Alumno {
 

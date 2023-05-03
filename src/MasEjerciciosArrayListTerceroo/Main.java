@@ -1,5 +1,5 @@
 
-package MasEjerciciosArrayListTercero;
+package MasEjerciciosArrayListTerceroo;
 
 import java.util.ArrayList;
 import java.util.Scanner;

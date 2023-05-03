@@ -1,4 +1,6 @@
-package MasEjerciciosArrayListTercero.Ejercicio2;
+package MasEjerciciosArrayListTerceroo.Ejercicio2;
+
+import MasEjerciciosArrayListTerceroo.Ejercicio2.Alumno;
 
 import java.util.ArrayList;
 import java.util.Comparator;
