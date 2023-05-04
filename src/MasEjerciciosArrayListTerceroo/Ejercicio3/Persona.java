@@ -1,7 +1,10 @@
 package MasEjerciciosArrayListTerceroo.Ejercicio3;
 
+import java.util.Comparator;
+
 public class Persona {
 
+    
     private String dni;
     private String nombre;
     private String apellido1;
@@ -19,6 +22,10 @@ public class Persona {
         this.sexo = sexo;
         this.edad = edad;
         this.peso = peso;
+    }
+
+    public Persona() {
+        
     }
 
     public String getDni() {
@@ -88,5 +95,12 @@ public class Persona {
                 ", edad=" + edad +
                 ", peso=" + peso +
                 '}';
+    }
+
+
+    public void sort(Comparator<Persona> thenComparing) {
+    }
+
+    public void remove(Persona p) {
     }
 }
